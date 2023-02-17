@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="ARACELI_DUMARAN_RD_B">
+  <name>ARACELI_DUMARAN_RD_B</name>
+  <Snippet></Snippet>
+  <Style id="LineStyle00">
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <LineStyle>
+      <color>ff876100</color>
+      <width>1.000000</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>00000000</color>
+      <outline>0</outline>
+    </PolyStyle>
+  </Style>
+  <Folder id="FeatureLayer0">
+    <name>ARACELI_DUMARAN_RD_B</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_00000">
+      <name></name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td></td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>FID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Id</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ROAD_NAME</td>
+<td>Araceli - Dumaran Road B</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ROAD_CLASS</td>
+<td>Provincial Road</td>
+</tr>
+<tr>
+<td>LENGHT_KM</td>
+<td>2.68</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>WIDTH_M</td>
+<td>5.63</td>
+</tr>
+<tr>
+<td>CARRIAGE_M</td>
+<td>5.87</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SURFACE</td>
+<td>Concrete</td>
+</tr>
+<tr>
+<td>CONDITION</td>
+<td>Good</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TRAFFIC</td>
+<td>None</td>
+</tr>
+<tr>
+<td>IMPORTANCE</td>
+<td>Major Road</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TERRAIN</td>
+<td>F</td>
+</tr>
+<tr>
+<td>NO_CULVERT</td>
+<td>5</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NO_BRIDGE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>REMARKS</td>
+<td>On-Going Concreting</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#LineStyle00</styleUrl>
+      <MultiGeometry>
+        <LineString>
+          <extrude>0</extrude>
+          <tessellate>1</tessellate><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 119.8167009093868,10.54237827619194,0 119.8167002388786,10.54237391783483,0 119.816682804137,10.54235195697911,0 119.816632177752,10.54227551405778,0 119.8161824882906,10.54165475043296,0 119.8158785572534,10.54129514502603,0 119.8158103325341,10.54120539698594,0 119.815741781872,10.54113331332531,0 119.8156471366095,10.54102133015459,0 119.8155653762025,10.54099109759289,0 119.8154154609464,10.54088420198653,0 119.8151486936106,10.54083701790722,0 119.8150892727675,10.54081504579917,0 119.8149149776304,10.54075059463364,0 119.8146017616663,10.54074027936772,0 119.8138377980533,10.54071511598972,0 119.8136249084733,10.54071868947703,0 119.8132422007858,10.54072511411347,0 119.8128518552605,10.54073617834757,0 119.8126758368309,10.5407620101647,0 119.8126462232481,10.54076635601732,0 119.8121488406637,10.54083934930052,0 119.8119380271971,10.54083995359769,0 119.8113797530544,10.54054168364935,0 119.8112904750148,10.54048866052377,0 119.8109803443491,10.54033401413383,0 119.8106599877067,10.54033275709749,0 119.8100028466829,10.54046209012383,0 119.8096603622899,10.54049586856188,0 119.8096042034014,10.5404545460828,0 119.8094917186116,10.54036586510288,0 119.8092240836536,10.5402727424488,0 119.8089116907202,10.54020266995766,0 119.8088754811047,10.54016738196017,0 119.8088797551533,10.54016662760041,0 119.8088560347115,10.54004777196898,0 119.8088629913824,10.53922181937101,0 119.8088502814264,10.53919910134342,0 119.8088006944627,10.53911047209762,0 119.8086025660814,10.53885502784683,0 119.8079924470389,10.5386790069822,0 119.8076622837483,10.53842327583323,0 119.8073995954726,10.53811752445171,0 119.8072924304007,10.53800771858994,0 119.8072063208981,10.53794656044916,0 119.8070618510369,10.53788324334514,0 119.8068748877965,10.53782539481017,0 119.8061282700193,10.53759979102376,0 119.8058422447505,10.53753944353971,0 119.8054961580228,10.53751006969158,0 119.8052182616239,10.53757309859759,0 119.8050833102981,10.53760370573859,0 119.8047248084998,10.53745671417996,0 119.8046858704737,10.53744074923182,0 119.8045832396229,10.53731726768635,0 119.8045819343891,10.53731719975745,0 119.8044634870451,10.53717672338836,0 119.8042795153917,10.53695853823797,0 119.8041730355113,10.53687193347017,0 119.8039146597438,10.53666178652779,0 119.8038312550245,10.53664356943444,0 119.8034473800724,10.53672318294802,0 119.8033811432727,10.53673692082626,0 119.802979339141,10.53685849533633,0 119.8029379083624,10.53687103134888,0 119.8029059729767,10.53687354570912,0 119.8029041292463,10.53687379693064,0 119.8027473034905,10.53684974081403,0 119.8026214072758,10.53683096569866,0 119.8026144504166,10.53683448558549,0 119.8024916558485,10.53681503970956,0 119.8023184954333,10.53677241298423,0 119.8021598994531,10.53673826124711,0 119.8020719737871,10.53671672030791,0 119.8020581834433,10.53670833230661,0 119.8020156470787,10.53669786086776,0 119.8019782642605,10.53667950397225,0 119.8016488017711,10.53645931682674,0 119.8014274892421,10.53632469865821,0 119.8008608728131,10.53592303767135,0 119.800533643316,10.53571449586279,0 119.8000961213386,10.53529710831614,0 119.7998979593697,10.53510806546879,0 119.7997936888015,10.53500470617706,0 119.799538686861,10.53475193321246,0 119.7995048482169,10.53471839070927,0 119.7991021816055,10.53425042856142,0 119.7990478323126,10.53418329507819,0 119.7988528201956,10.53387282436942,0 119.79840614831,10.5334310975676,0 119.798386325343,10.53341754637111,0 119.7981579391423,10.53326140948174,0 119.7978884817215,10.53309682717146,0 119.7974526227282,10.53309305531852,0 119.7971497006267,10.53319875105622,0 119.7969014286437,10.53325792732204,0 119.7966745314509,10.53321006753663,0 119.7966072038042,10.53317019578828,0</coordinates>
+        </LineString>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00001">
+      <name></name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td></td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>FID</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Id</td>
+<td>2</td>
+</tr>
+<tr>
+<td>ROAD_NAME</td>
+<td>Araceli - Dumaran Road B</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ROAD_CLASS</td>
+<td>Provincial Road</td>
+</tr>
+<tr>
+<td>LENGHT_KM</td>
+<td>0.88</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>WIDTH_M</td>
+<td>5.63</td>
+</tr>
+<tr>
+<td>CARRIAGE_M</td>
+<td>5.87</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SURFACE</td>
+<td>Concrete</td>
+</tr>
+<tr>
+<td>CONDITION</td>
+<td>Good</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TRAFFIC</td>
+<td>None</td>
+</tr>
+<tr>
+<td>IMPORTANCE</td>
+<td>Major Road</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TERRAIN</td>
+<td>F</td>
+</tr>
+<tr>
+<td>NO_CULVERT</td>
+<td>1</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NO_BRIDGE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>REMARKS</td>
+<td>On-Going Concreting</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#LineStyle00</styleUrl>
+      <MultiGeometry>
+        <LineString>
+          <extrude>0</extrude>
+          <tessellate>1</tessellate><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 119.7732884792271,10.53065222695853,0 119.7725179864871,10.53042404744927,0 119.770929181615,10.53085470387391,0 119.7695946610574,10.53077805305477,0 119.7694610548743,10.53070692274519,0 119.7687910352602,10.53031282462632,0 119.7683297988394,10.52997001022523,0 119.7681953385683,10.52918683778868,0 119.7679752297258,10.52802870977452,0 119.76790229537,10.52762259662426,0 119.7678730320962,10.52726480505306,0</coordinates>
+        </LineString>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00002">
+      <name></name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td></td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>FID</td>
+<td>2</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Id</td>
+<td>3</td>
+</tr>
+<tr>
+<td>ROAD_NAME</td>
+<td>Araceli - Dumaran Road B</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ROAD_CLASS</td>
+<td>Provincial Road</td>
+</tr>
+<tr>
+<td>LENGHT_KM</td>
+<td>1.89</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>WIDTH_M</td>
+<td>5.63</td>
+</tr>
+<tr>
+<td>CARRIAGE_M</td>
+<td>5.87</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SURFACE</td>
+<td>Earth</td>
+</tr>
+<tr>
+<td>CONDITION</td>
+<td>Good</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TRAFFIC</td>
+<td>None</td>
+</tr>
+<tr>
+<td>IMPORTANCE</td>
+<td>Major Road</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TERRAIN</td>
+<td>F</td>
+</tr>
+<tr>
+<td>NO_CULVERT</td>
+<td>10</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NO_BRIDGE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>REMARKS</td>
+<td>Unpaved</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#LineStyle00</styleUrl>
+      <MultiGeometry>
+        <LineString>
+          <extrude>0</extrude>
+          <tessellate>1</tessellate><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 119.7889203484797,10.53431974735183,0 119.7888685485053,10.53432427378636,0 119.7888138148852,10.53432268099385,0 119.7887546383183,10.53430348623415,0 119.7886925286758,10.53427691557637,0 119.78787068267,10.53395957730129,0 119.7877437366695,10.53390370413221,0 119.7877332178757,10.53389907460574,0 119.7876634818294,10.53386838171545,0 119.7876394775867,10.53385876844743,0 119.7875270247007,10.53381373143803,0 119.7871389428536,10.53375321436275,0 119.787034799177,10.53376079068307,0 119.7869620843247,10.53374868828216,0 119.7863863314854,10.53393166479377,0 119.7857173398337,10.53390486320231,0 119.7856640631097,10.53389939487927,0 119.7855707105908,10.53390454943018,0 119.7854809159373,10.53390950731128,0 119.7852017881438,10.53392492008131,0 119.7845989700671,10.53376550270003,0 119.7845554505987,10.53374362163471,0 119.7845404611204,10.53372843325212,0 119.7844343126121,10.53359013683631,0 119.7843046845667,10.53342124737567,0 119.7841233853037,10.53313798256933,0 119.78400075822,10.53295567597232,0 119.7838293652575,10.53273126588135,0 119.7837578685923,10.53263084935035,0 119.7834303696729,10.53217087866243,0 119.7833015584368,10.53204299231564,0 119.783284945098,10.53202649821148,0 119.7830916566061,10.53183459643063,0 119.7828678596987,10.53163737049397,0 119.7828334939949,10.5316346109229,0 119.7828137131521,10.5316239590793,0 119.7827679476158,10.53162245068958,0 119.782613636988,10.53160367534466,0 119.782348768518,10.53161323113108,0 119.7821913223403,10.53166153543898,0 119.7821077886974,10.53168078901162,0 119.7819086354329,10.53166192954999,0 119.781828831981,10.53166387675164,0 119.7812868655151,10.53167710095081,0 119.7812354084821,10.53168057235111,0 119.7807401974509,10.53171398112694,0 119.7807344431993,10.53171450507549,0 119.7803463322499,10.53174985607833,0 119.7802105964602,10.53173942214698,0 119.7801216968002,10.53173258890467,0 119.7800613347779,10.53171316958347,0 119.779592103263,10.53156221528887,0 119.7795401602449,10.53154550447887,0 119.7788451578388,10.53124691727897,0 119.7787967735832,10.53122613043046,0 119.7786916590772,10.53117053286607,0 119.7784707544495,10.53103799835879,0 119.778463329836,10.53104976564533,0 119.7782426419131,10.53093303904164,0 119.7775841593342,10.5306193044132,0 119.777449294822,10.53061192864691,0 119.7770368219268,10.53066465063959,0 119.7762737325598,10.53083161810409,0 119.7758194340543,10.53095323972675,0 119.775595291479,10.53102037508235,0 119.7754631189229,10.53107050268399,0 119.7753304735733,10.53109893125542,0 119.7751508450854,10.53113742936919,0 119.7748048041025,10.53114325727798,0 119.7740095713221,10.53086577443804,0 119.7732884792271,10.53065222695853,0</coordinates>
+        </LineString>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00003">
+      <name></name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td></td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>FID</td>
+<td>3</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Id</td>
+<td>4</td>
+</tr>
+<tr>
+<td>ROAD_NAME</td>
+<td>Araceli - Dumaran Road B</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ROAD_CLASS</td>
+<td>Provincial Road</td>
+</tr>
+<tr>
+<td>LENGHT_KM</td>
+<td>0.29</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>WIDTH_M</td>
+<td>5.63</td>
+</tr>
+<tr>
+<td>CARRIAGE_M</td>
+<td>5.87</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SURFACE</td>
+<td>Concrete</td>
+</tr>
+<tr>
+<td>CONDITION</td>
+<td>Good</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TRAFFIC</td>
+<td>None</td>
+</tr>
+<tr>
+<td>IMPORTANCE</td>
+<td>Major Road</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TERRAIN</td>
+<td>F</td>
+</tr>
+<tr>
+<td>NO_CULVERT</td>
+<td>5</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NO_BRIDGE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>REMARKS</td>
+<td>On-Going Concreting (Half Lane)</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#LineStyle00</styleUrl>
+      <MultiGeometry>
+        <LineString>
+          <extrude>0</extrude>
+          <tessellate>1</tessellate><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 119.7911479227158,10.53307914182988,0 119.7903149307137,10.53337672359731,0 119.7902586871597,10.53339681557916,0 119.7899862354779,10.53346391335595,0 119.789904345716,10.53348408050681,0 119.7894201822514,10.53384307755089,0 119.7893730548196,10.53387802079963,0 119.7891825739763,10.53410138029594,0 119.7890498028678,10.5342570689682,0 119.7890273012154,10.53428345385822,0 119.7889998091091,10.53429460135886,0 119.7889834532217,10.5343009718904,0 119.7889681254965,10.5343111141781,0 119.7889486034288,10.53431464153982,0 119.7889398987992,10.53431621432218,0 119.7889203484797,10.53431974735183,0</coordinates>
+        </LineString>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark id="ID_00004">
+      <name></name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td></td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>FID</td>
+<td>4</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Id</td>
+<td>5</td>
+</tr>
+<tr>
+<td>ROAD_NAME</td>
+<td>Araceli - Dumaran Road B</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>ROAD_CLASS</td>
+<td>Provincial Road</td>
+</tr>
+<tr>
+<td>LENGHT_KM</td>
+<td>0.65</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>WIDTH_M</td>
+<td>5.63</td>
+</tr>
+<tr>
+<td>CARRIAGE_M</td>
+<td>5.87</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>SURFACE</td>
+<td>Earth</td>
+</tr>
+<tr>
+<td>CONDITION</td>
+<td>Good</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TRAFFIC</td>
+<td>None</td>
+</tr>
+<tr>
+<td>IMPORTANCE</td>
+<td>Major Road</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>TERRAIN</td>
+<td>F</td>
+</tr>
+<tr>
+<td>NO_CULVERT</td>
+<td>5</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>NO_BRIDGE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>REMARKS</td>
+<td>Unpaved</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#LineStyle00</styleUrl>
+      <MultiGeometry>
+        <LineString>
+          <extrude>0</extrude>
+          <tessellate>1</tessellate><altitudeMode>clampToGround</altitudeMode>
+          <coordinates> 119.7966072038042,10.53317019578828,0 119.7965398761725,10.53313032402105,0 119.796434521719,10.53306793272166,0 119.7962572798164,10.53296296885477,0 119.7960032262843,10.53282243207054,0 119.7955842129137,10.53259064444545,0 119.7951901794614,10.53242719761529,0 119.7947153444587,10.53254680687072,0 119.7938854527053,10.53279315112652,0 119.7932486832807,10.53304409767129,0 119.7931078635034,10.53309959348979,0 119.7923175336051,10.53335716967313,0 119.7922800543178,10.53335923130956,0 119.7918497400099,10.53338290204454,0 119.7918018790794,10.53337275967239,0 119.7917512528284,10.53335339789906,0 119.7917008775457,10.53332196512195,0 119.7916541899285,10.5332807266133,0 119.791610939228,10.53323823003084,0 119.7915261985781,10.53315005301587,0 119.7911479227158,10.53307914182988,0</coordinates>
+        </LineString>
+      </MultiGeometry>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>
