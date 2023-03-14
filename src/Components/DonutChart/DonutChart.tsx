@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useEffect, useState } from 'react';
 import { View, Text } from 'react-native';
 import { Svg, G, Path, Circle, Text as TextSvg } from 'react-native-svg';
 
@@ -17,18 +17,46 @@ interface DonutChartProps {
     centerTextPercentage?: string
     centerFont?: number
     centerFontWeight?: boolean;
-    centerText?:string;
-    centerTextMargin?:string
+    centerText?: string;
+    centerTextMargin?: number
 }
 
-const DonutChart = ({ data, radius, strokeWidth, renderChildren, legendTitle = 'Legend', centerTotal = true, centerText, centerTextMargin='16',
- centerTextPercentage = '%', centerFont = 20, centerFontWeight=true }: DonutChartProps) => {
+const DonutChart = ({ data, radius, strokeWidth, renderChildren,
+    legendTitle = 'Legend', centerTotal = true, centerText, centerTextMargin=65,
+    centerTextPercentage = '%', centerFont = 20, centerFontWeight = true }: DonutChartProps) => {
     const total: number = data.reduce((sum: number, { value }: Data) => sum + value, 0);
+    let perData: number = 0
 
     const center = {
         x: radius + strokeWidth / 2,
         y: radius + strokeWidth / 2,
     };
+
+    // function ArrayPlusDelay(array:any, delegate:any, delay:any) {
+    //     var i = 0
+      
+    //      // seed first call and store interval (to clear later)
+    //     var interval = setInterval(function() {
+
+    //           // each loop, call passed in function
+    //         delegate(array[i]);
+
+            
+    //           // increment, and if we're past array, clear interval
+    //         if (i++ >= array.length - 1)
+    //             clearInterval(interval);
+    //     }, delay)
+        
+    //     return interval
+    //   }
+    
+    //     ArrayPlusDelay(data, function(obj:any) {
+    //         // setPerData(obj.value)
+    //         perData = obj?.value
+    //         console.log(obj?.value)
+    //     },5000)
+     
+   
 
     const calculateAngle = (value: number): number => (value / total) * Math.PI * 2;
 
@@ -58,13 +86,13 @@ const DonutChart = ({ data, radius, strokeWidth, renderChildren, legendTitle = '
                         );
                     })}
                     <Circle cx={center.x} cy={center.y} r={radius - strokeWidth / 2} fill="#fff" />
-                     <TextSvg x={center.x} y={center.y} textAnchor="middle" fontSize={centerFont} fontWeight={centerFontWeight ? "bold": "normal"}>
-                            {centerTotal ? total.toString() + centerTextPercentage : null}
-                        </TextSvg>
-                        <View className={`justify-center items-center mt-${centerTextMargin}`}>
-                            <Text className='text-center text-xs text-black p-2'>{centerText}</Text>
-                        </View>
-                   
+                    <TextSvg x={center.x} y={center.y} textAnchor="middle" fontSize={centerFont} fontWeight={centerFontWeight ? "bold" : "normal"}>
+                        {centerTotal ? perData + centerTextPercentage : null}
+                    </TextSvg>
+                    <View className="justify-center items-center" style={{marginTop:centerTextMargin}}>
+                        <Text className='text-center text-xs text-black p-2'>{centerText}</Text>
+                    </View>
+
                 </Svg>
             </View>
 
@@ -107,10 +135,10 @@ export default DonutChart;
 //   }
 
 {/* <DonutChart 
-                centerFontWeight={false} true/false
+                centerFontWeight={false} //true/false
                 data={data} radius={radius} 
                 strokeWidth={strokeWidth} 
                 legendTitle={'Project Details'} 
                 centerFont={30} centerTotal={true} 
-                centerTextPercentage={'%'} % or '' string
+                centerTextPercentage={'%'} % or '' //string
                 renderChildren={renderChildren} /> */}

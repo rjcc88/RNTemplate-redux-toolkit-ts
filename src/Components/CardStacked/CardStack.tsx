@@ -1,125 +1,275 @@
-import React, { useState, useEffect } from 'react';
-import { View, StyleSheet, PanResponder, Animated, ViewStyle, Image, Text, TouchableOpacity, PanResponderInstance } from 'react-native';
+// import React, { useState } from 'react'
+// import { PanResponder, Animated, GestureResponderEvent, PanResponderGestureState, View } from 'react-native';
 
-type CardData = {
-  image: string;
-  title: string;
-  description: string;
-};
+// interface dataProp{
+//   data:any[]
+// }
+// interface State {
+//   cardsPan: Animated.ValueXY;
+//   currentIndex: number;
+//   cardsStackedAnim: Animated.Value
+// }
 
-type CardStackProps = {
-  data: CardData[];
-  style?: ViewStyle;
-};
 
-const CardStack = ({ data, style }: CardStackProps) => {
-  const [panResponder, setPanResponder] = useState<PanResponderInstance | null>(null);
-  const [position, setPosition] = useState<Animated.ValueXY>(new Animated.ValueXY());
-  const [currentIndex, setCurrentIndex] = useState(0);
+// const CardStack = ({data}: dataProp) => {
 
-  useEffect(() => {
-    setPanResponder(
-      PanResponder.create({
-        onMoveShouldSetPanResponder: () => true,
-        onPanResponderMove: Animated.event([null, { dx: position.x, dy: position.y }]),
-        onPanResponderRelease: (e, gesture) => {
-          if (gesture.dx < 100) {
-            Animated.spring(position, {
-              toValue: { x: 0, y: 0 },
-              useNativeDriver: true,
-            }).start();
-          } else {
-            Animated.timing(position, {
-              toValue: { x: 500, y: gesture.dy },
-              duration: 500,
-              useNativeDriver: true,
-            }).start(() => {
-              setCurrentIndex(currentIndex + 1);
-              setPosition(new Animated.ValueXY());
-            });
-          }
-        },
-      })
-    );
-  }, [currentIndex]);
+//   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const cardData = data[currentIndex % data.length];
+//   const state: State = {
+//     cardsPan: new Animated.ValueXY(),
+//     cardsStackedAnim: new Animated.Value(0), // add this statement
+//     currentIndex: 0,
+//   };
 
-  return (
-    <View style={[styles.container, style]}>
-      <Animated.View
-        style={[styles.card, { transform: [{ translateX: position.x }, { translateY: position.y }] }]}
-        {...panResponder?.panHandlers}
-      >
-        <View style={styles.imageContainer}>
-          <Image source={{ uri: cardData.image }} style={styles.image} />
-        </View>
-        <View style={styles.content}>
-          <Text style={styles.title}>{cardData.title}</Text>
-          <Text style={styles.description}>{cardData.description}</Text>
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>Learn More</Text>
-          </TouchableOpacity>
-        </View>
-      </Animated.View>
-    </View>
-  );
-};
+//   const cardsPanResponder = PanResponder.create({
+//     onStartShouldSetPanResponder: () => true,
+//     onStartShouldSetPanResponderCapture: () => true,
+//     onMoveShouldSetPanResponder: () => true,
+//     onMoveShouldSetPanResponderCapture: () => true,
+//     onPanResponderMove: (event: GestureResponderEvent, gestureState: PanResponderGestureState) => {
+//       state.cardsPan.setValue({
+//         x: gestureState.dx,
+//         y: gestureState.dy,
+//       });
+//     },
+//     onPanResponderTerminationRequest: () => false,
+//     onPanResponderRelease: (event: GestureResponderEvent, gestureState: PanResponderGestureState) => {
+//       // bring the translationX back to 0
+//       Animated.timing(state.cardsPan, {
+//         toValue: 0,
+//         duration: 300,
+//         useNativeDriver: true
+//       }).start();
+//       // will be used to interpolate values in each view
+//       Animated.timing(state.cardsStackedAnim, {
+//         toValue: 1,
+//         duration: 300,
+//         useNativeDriver: true
+//       }).start(() => {
+//         // reset cardsStackedAnim's value to 0 when animation ends
+//         state.cardsStackedAnim.setValue(0);
+//         // increment card position when animation ends
+//         setCurrentIndex(currentIndex + 1);
+//       });
+//     },
+//   });
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  card: {
-    width: '80%',
-    height: '60%',
-    backgroundColor: '#fff',
-    borderRadius: 8,
-    elevation: 3,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  imageContainer: {
-    flex: 1,
-    width: '100%',
-    overflow: 'hidden',
-    borderTopLeftRadius: 8,
-    borderTopRightRadius: 8,
-  },
-  image: {
-    width: '100%',
-    height: '100%',
-    resizeMode: 'cover',
-  },
-  content: {
-    flex: 1,
-    padding: 16,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 8,
-  },
-  description: {
-    fontSize: 18,
-    marginBottom: 16,
-    textAlign: 'center',
-  },
-  button: {
-  backgroundColor: '#009688',
-  paddingVertical: 8,
-  paddingHorizontal: 16,
-  borderRadius: 4,
-  },
-  buttonText: {
-  color: '#fff',
-  fontWeight: 'bold',
-  fontSize: 16,
-  },
-  });
-  
-  export default CardStack;
+//   const colors = ['#5C6BC0', '#009688', '#F44336'];
+
+//   return (
+//     <View>
+//      <View>
+//   <Animated.View
+//     style={{
+//       width: 300, 
+//       height: 150,
+//       position: 'absolute',
+//       backgroundColor: colors[(state.currentIndex + 2) % 3],
+//       zIndex: 1,
+//       transform: [{
+//         translateY: state.cardsStackedAnim.interpolate({
+//           inputRange: [0, 1],
+//           outputRange: [40, 20]
+//         })
+//       }, {
+//         scale: state.cardsStackedAnim.interpolate({
+//           inputRange: [0, 1],
+//           outputRange: [0.8, 0.9]
+//         })
+//       }],
+//       opacity: state.cardsStackedAnim.interpolate({
+//         inputRange: [0, 1],
+//         outputRange: [0.3, 0.6]
+//       })
+//     }}
+//   />
+//   <Animated.View
+//     style={{
+//       width: 300, 
+//       height: 150,
+//       position: 'absolute',
+//       backgroundColor: colors[(state.currentIndex + 1) % 3],
+//       zIndex: 2,
+//       transform: [{
+//         translateY: state.cardsStackedAnim.interpolate({
+//           inputRange: [0, 1],
+//           outputRange: [20, 0]
+//         })
+//       }, {
+//         scale: state.cardsStackedAnim.interpolate({
+//           inputRange: [0, 1],
+//           outputRange: [0.9, 1]
+//         })
+//       }],
+//       opacity: state.cardsStackedAnim.interpolate({
+//         inputRange: [0, 1],
+//         outputRange: [0.6, 1]
+//       })
+//     }}
+//   />
+//   <Animated.View
+//     {...cardsPanResponder.panHandlers}
+//     style={{
+//       width: 300, 
+//       height: 150,
+//       position: 'absolute',
+//       backgroundColor: colors[state.currentIndex % 3],
+//       zIndex: state.cardsStackedAnim.interpolate({
+//         inputRange: [0, 0.5, 1],
+//         outputRange: [3, 2, 0]
+//       }),
+//       transform: [
+//         {translateX: state.cardsPan.x},
+//         {
+//           translateY: state.cardsStackedAnim.interpolate({
+//             inputRange: [0, 1],
+//             outputRange: [0, 40]
+//           })
+//         }, 
+//         {
+//           scale: state.cardsStackedAnim.interpolate({
+//             inputRange: [0, 1],
+//             outputRange: [1, 0.8]
+//           })
+//         }
+//       ],
+//       opacity: state.cardsStackedAnim.interpolate({
+//         inputRange: [0, 1],
+//         outputRange: [1, 0.3]
+//       })
+//     }}
+//   />
+// </View>
+
+
+//     </View>
+//   )
+// }
+
+// export default CardStack
+
+
+// import React, { Component } from 'react';
+// import { View, Animated, PanResponder, GestureResponderEvent, PanResponderGestureState, PanResponderInstance } from 'react-native';
+
+// type Card = {
+//   id: number;
+//   backgroundColor: string;
+// };
+
+// type Props = {
+//   cards: Card[];
+// };
+
+// type State = {
+//   currentIndex: number;
+//   cardsPan: Animated.ValueXY;
+//   cardsStackedAnim: Animated.Value;
+// };
+
+// const colors = [ 'red', 'green', 'blue' ];
+
+// class SwipeCards extends Component<Props, State> {
+//   private cardsPanResponder: PanResponderInstance;
+
+//   constructor(props: Props) {
+//     super(props);
+
+//     this.state = {
+//       currentIndex: 0,
+//       cardsPan: new Animated.ValueXY(),
+//       cardsStackedAnim: new Animated.Value(0),
+//     };
+
+//     this.cardsPanResponder = PanResponder.create({
+//       onStartShouldSetPanResponder: () => true,
+//       onStartShouldSetPanResponderCapture: () => true,
+//       onMoveShouldSetPanResponder: () => true,
+//       onMoveShouldSetPanResponderCapture: () => true,
+//       onPanResponderMove: (event: GestureResponderEvent, gestureState: PanResponderGestureState) => {
+//         this.state.cardsPan.setValue({
+//           x: gestureState.dx,
+//           y: gestureState.dy,
+//         });
+//       },
+//       onPanResponderTerminationRequest: () => false,
+//       onPanResponderRelease: (event: GestureResponderEvent, gestureState: PanResponderGestureState) => {
+//         Animated.timing(this.state.cardsPan, {
+//           toValue: 0,
+//           duration: 300,
+//           useNativeDriver:true
+//         }).start();
+
+//         Animated.timing(this.state.cardsStackedAnim, {
+//           toValue: 1,
+//           duration: 300,
+//           useNativeDriver:true
+//         }).start(() => {
+//           this.state.cardsStackedAnim.setValue(0);
+
+//           this.setState({
+//             currentIndex: this.state.currentIndex + 1,
+//           });
+//         });
+//       },
+//     });
+//   }
+
+//   render() {
+//     const { cards } = this.props;
+//     const { currentIndex, cardsPan, cardsStackedAnim } = this.state;
+
+//     const cardViews = cards.slice(currentIndex, currentIndex + 3).map((card, index) => {
+//       const zIndex = cardsStackedAnim.interpolate({
+//         inputRange: [ 0, 0.5, 1 ],
+//         outputRange: [ 3 - index, 2 - index, 0 ],
+//       });
+
+//       const scale = cardsStackedAnim.interpolate({
+//         inputRange: [ 0, 1 ],
+//         outputRange: [ 1 - index * 0.1, 0.8 ],
+//       });
+
+//       const opacity = cardsStackedAnim.interpolate({
+//         inputRange: [ 0, 1 ],
+//         outputRange: [ 1 - index * 0.3, 0.3 ],
+//       });
+
+//       const bottom = cardsStackedAnim.interpolate({
+//         inputRange: [ 0, 1 ],
+//         outputRange: [ 40 - index * 20, 20 ],
+//       });
+
+//       return (
+//         <Animated.View
+//           key={card.id}
+//           {...this.cardsPanResponder.panHandlers}
+//           style={{
+//             width: 300,
+//             height: 150,
+//             position: 'absolute',
+//             backgroundColor: card.backgroundColor,
+//             zIndex,
+//             bottom,
+//             opacity,
+//             transform: [
+//               { translateX: cardsPan.x },
+//               { scale },
+//             ],
+//           }}
+//         />
+//       );
+//     });
+
+//     return (
+//       <View>
+//         {cardViews}
+//       </View>
+//     );
+//   }
+// }
+
+// export default SwipeCards;
+
+
+
